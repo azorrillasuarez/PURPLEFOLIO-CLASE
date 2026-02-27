@@ -4,3 +4,92 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+
+a {
+    color: #777e90;
+    text-decoration: none;
+}
+
+/* Estas propiedades hacen que las imagenes sean responsive y de adapten al tamaño de su contenedos */
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+h2,
+p {
+    font-size: 24px;
+    color: #777e90;
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    /* background-color: aqua; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+nav > ul > li > a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Este selector solo se activa si el cursor pasa por encima */
+nav > ul > li > a:hover {
+    color: #6e06f2;
+}
+
+header {
+    padding: 80px 0;
+    display: flex;
+    gap: 200px;
+}
+
+header > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/*Este selecciona los 2 botones */
+.btn-group > a {
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-group {
+    display: flex;
+    gap: 24px;
+}
+
+.btn-group > a:first-child {
+    background-color: #6e06f2;
+    color: aliceblue;
+}
+
+.btn-group > a:last-child ¨{
+    border: 1px black solid;
+}

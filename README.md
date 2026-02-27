@@ -24,3 +24,22 @@ Son etiquetas de HTML que le indican al navegador que parte de la web esta rende
 - <section></section> -> para definir secciones de la web. Se diferencian entre ellas con un id.
 
 - <footer></footer> -> Para el pie de la web donde se encuentran algunos enlace importantes.
+
+- ALT + Z: Acortar texto del código
+
+- line-height: me sirve para modificar el interlineado en un elemento
+
+## FLEXBOX
+
+Las propiedades de css de flexbox me permiten cambiar la posición, el orden y el movimiento de los elementos de HTML. Con flexbox podemos controlar el posicionamiento y la estructuración del HTML con un funiconamiento responsive
+
+Guía INDISPENSABLE de Flexbox -> https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Este conjunto de propiedades sigue la filosofía del diseño responsive y funcionan siguiendo unas normas estructurales por lo que en el HTML necesitamos identificar dos partes:
+
+1. Contenedor FLEX (El elemento padre)
+2. El o los elementos flex (elementos hijos)
+
+Para activar estas propiedades lo primero que debemos hacer es estructurar el HTML, luego localizar el elemento contenedor o padre y añadirle la propiedad de CSS -> display: flex;
+
+En la mayoría de los casos vamos a maquetar el HTML con propiedades flexbox pero no estamos obligados. Dependiendo de la situación podemos maquetar el HTML usando ootras propiedades.
