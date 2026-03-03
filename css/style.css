@@ -72,6 +72,21 @@ header > div:first-child {
     gap: 28px;
 }
 
+header > div:last-child {
+    min-width: 380px;
+    max-width: 624px;
+    border: 1px #6e06f2 solid;
+    padding: 40px;
+    height: fit-content;
+    border-radius: 50%;
+    /* overflow: hidden; */
+}
+
+header > :last-child > img {
+    border-radius: 50%;
+}
+/*GROP DE BOTONES */
+
 /*Este selecciona los 2 botones */
 .btn-group > a {
     padding: 8px 10px;

@@ -29,6 +29,8 @@ Son etiquetas de HTML que le indican al navegador que parte de la web esta rende
 
 - line-height: me sirve para modificar el interlineado en un elemento
 
+- overflow: hidden (para ocultar el contenido en el contenedor)
+
 ## FLEXBOX
 
 Las propiedades de css de flexbox me permiten cambiar la posición, el orden y el movimiento de los elementos de HTML. Con flexbox podemos controlar el posicionamiento y la estructuración del HTML con un funiconamiento responsive
