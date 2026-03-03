@@ -85,7 +85,8 @@ header > div:last-child {
 header > :last-child > img {
     border-radius: 50%;
 }
-/*GROP DE BOTONES */
+
+/*GRUPO DE BOTONES */
 
 /*Este selecciona los 2 botones */
 .btn-group > a {
@@ -107,4 +108,66 @@ header > :last-child > img {
 
 .btn-group > a:last-child ¨{
     border: 1px black solid;
+}
+
+
+/* FLEXBOX.HTML*/
+
+.cont-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+.cont-parent > div {
+    width: 275px;
+    padding: 20px;
+}
+
+.cont-second {
+    margin: 80px 0;
+    background-color: aqua;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-second > div {
+    background-color: #6e06f2;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-second > div > p {
+    color: aquamarine;
+    font-size: 16px;
+}
+
+.flex-cont-wrap {
+    padding: 40px;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.flex-cont-wrap > div {
+    width: 100px;
+    height: 100px;
+    background-color: fuchsia;
+    border: 1px #6e06f2 solid;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-cont-wrap > div > p {
+    color: chartreuse;
 }
