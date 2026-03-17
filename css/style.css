@@ -104,10 +104,23 @@ header > :last-child > img {
 .btn-group > a:first-child {
     background-color: #6e06f2;
     color: aliceblue;
+    transition: .3s;
 }
 
 .btn-group > a:last-child {
     border: 1px black solid;
+    transition: 0.3s;
+}
+
+/*Efectos hover para los botones */
+
+.btn-group > a:first-child:hover {
+    background-color: #935adf;
+}
+
+.btn-group > a:last-child:hover {
+    background-color: black;
+    color: aliceblue;
 }
 
 
@@ -205,3 +218,38 @@ footer > .f-row > .btn-group {
 footer > .f-row > .copyright {
     text-align: right;
 }
+
+
+/*MEDIA QUERIES investigar esto
+
+TABLET
+@media screen and (max-width: 720px) {
+
+.wrapper {
+padding: 0 20px;
+}
+
+h1 {
+font-size: 48px;
+}
+
+
+footer > .f-row {
+flexdirection: column;
+align-item: center;
+}
+
+footer > .f-row > .copyright {
+padding-top: 40px;
+text-align: center;
+}
+
+MOBILE 
+
+@media screen and (480px
+
+.wrapper {
+padding: 0 10px
+}
+
+*/
