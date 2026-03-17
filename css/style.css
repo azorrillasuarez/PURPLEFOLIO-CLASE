@@ -220,48 +220,46 @@ footer > .f-row > .copyright {
 }
 
 
-/*MEDIA QUERIES investigar esto
+/*MEDIA QUERIES investigar*/
 
-TABLET
-@media screen and (max-width: 720px) {
+/*TABLET*/
+@media screen and (max-with: 720px) {
 
-.wrapper {
-padding: 0 20px;
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    footer > .f-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer > .f-row > .copyright {
+        padding-top: 40px;
+        text-align: center;
+    }
+
 }
 
-h1 {
-font-size: 48px;
-}
-
-
-footer > .f-row {
-flexdirection: column;
-align-item: center;
-}
-
-footer > .f-row > .copyright {
-padding-top: 40px;
-text-align: center;
-}
-
-MOBILE 
-
+/*MOBILE*/
 @media screen and (max-widt: 480px) {
 
 .wrapper {
 padding: 0 10px
 }
 
-header > div:last-child {
+/*header > div:last-child {
 opacity: 0,5;
---se queda como comentario
-}
+} */
 
 header > div:last-child {
 display: none;
---con esto desaparece la imagen cuando pasamos de escritorio y móvil
+/*con esto desaparece la imagen cuando pasamos de escritorio y móvil*/
 }
 
 }
 
-*/
