@@ -246,10 +246,22 @@ text-align: center;
 
 MOBILE 
 
-@media screen and (480px
+@media screen and (max-widt: 480px) {
 
 .wrapper {
 padding: 0 10px
+}
+
+header > div:last-child {
+opacity: 0,5;
+--se queda como comentario
+}
+
+header > div:last-child {
+display: none;
+--con esto desaparece la imagen cuando pasamos de escritorio y móvil
+}
+
 }
 
 */
