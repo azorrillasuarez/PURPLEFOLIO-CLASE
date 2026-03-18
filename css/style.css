@@ -133,10 +133,6 @@ header > :last-child > img {
     color: aliceblue;
 }
 
-.projects > div {
-    display: flex;
-    flex-direction: column;
-}
 /* FLEXBOX.HTML*/
 
 .cont-parent {
