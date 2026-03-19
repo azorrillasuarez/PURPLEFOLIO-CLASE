@@ -168,6 +168,12 @@ header > :last-child > img {
     border-radius: 20px 20px;
 }
 
+/* EXPERIENCE */
+
+#experience {
+    padding: 80px 0;
+}
+
 /* FLEXBOX.HTML*/
 
 .cont-parent {
@@ -280,6 +286,7 @@ footer > .f-row > .copyright {
     header {
         flex-wrap: wrap;
         gap: 28px;
+        justify-content: center;
     }
 
     #projects > .p-row {
