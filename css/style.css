@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+span {
+    color: #6e06f2;
+}
+
 /* Estas propiedades hacen que las imagenes sean responsive y de adapten al tamaño de su contenedos */
 img {
     width: 100%;
@@ -133,6 +137,37 @@ header > :last-child > img {
     color: aliceblue;
 }
 
+/* PROJECTS */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+#projects > .p-row {
+    display: flex;
+    gap: 24px;
+}
+
+#projects > .p-row > .small-col {
+    width: 35%;
+}
+
+#projects > .p-row > .big-col {
+    width: 65%;
+}
+
+#projects > .p-row > .p-col > div {
+    height: 300px;
+}
+
+#projects > .p-row > .p-col > div > img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px;
+}
+
 /* FLEXBOX.HTML*/
 
 .cont-parent {
@@ -232,7 +267,7 @@ footer > .f-row > .copyright {
 /*MEDIA QUERIES investigar*/
 
 /*TABLET*/
-@media screen and (max-with: 720px) {
+@media screen and (max-width: 720px) {
 
     .wrapper {
         padding: 0 20px;
@@ -240,6 +275,23 @@ footer > .f-row > .copyright {
 
     h1 {
         font-size: 48px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+
+    #projects > .p-row {
+        flex-wrap: wrap;
+    }
+
+    #projects > .p-row > .small-col {
+        width: 100%;
+    }
+
+    #projects > .p-row > .big-col {
+        width: 100%;
     }
 
     footer > .f-row {
@@ -255,7 +307,7 @@ footer > .f-row > .copyright {
 }
 
 /*MOBILE*/
-@media screen and (max-widt: 480px) {
+@media screen and (max-width: 480px) {
 
 .wrapper {
 padding: 0 10px
