@@ -48,3 +48,37 @@ En la mayoría de los casos vamos a maquetar el HTML con propiedades flexbox per
 
 
 Lo ideal es tener un único css para todos los html.
+
+## POSICIONAMIENTO ABSOLUTO Y FIJO
+
+Con la propiedad position podemos cambiar el comportamiento de como se posiciona un elemento. Por defecto esta propiedad tiene el valor static pero puede tomar otros valores.
+
+Con el valor fixed podemos fijar un elemento a una posición concreta de la pantalla. Esto hará que visualmente parezca que ese elemento nos sigue al hacer scroll.
+
+Cuando cambiamos el valor de la propiedad position podemos mover ese elemnto cambiando los valores de las propiedades de coordenadas.
+
+top
+right
+bottom
+left
+
+Con position: absolute; puedo posicionar un elemnto de forma exacta por coordenadas. 
+
+Cuando un elemento tiene la propiedad con position absolute no respeta la estructura del html. Para controlar a que contenedor de html debe hacer caso debemos usar la propiedad position pero con el valor relative
+
+## BOTÓN SCROLL UP  Y OVERLAYS - EJERCICIO
+
+- Cargar un icono o imagen (dentro del div) ..
+
+- Al hacer click tiene que hacer scroll hacia arriba de la home (investigar propiedad scroll-behaviour: smooth; para añadir en el selector universal) ..
+
+- Este botón tendrá una animación hover con transition ..
+
+- Repetir el overlay para los otros tres proyectos ..
+
+- Añadir una capa de overlay para la imagen principal del header (tiene que ser circular) ..
+
+- Crear una página nueva de HTML que se llame gallery.html y crear la estructura básica
+
+- Enlazar el index.html y el gallery.html entre ellos (dende el menú de navegación)
+
