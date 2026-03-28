@@ -49,6 +49,35 @@ En la mayoría de los casos vamos a maquetar el HTML con propiedades flexbox per
 
 Lo ideal es tener un único css para todos los html.
 
+## ICONOS DE FONT-AWSOME
+
+Es una librería gratuita de iconos. Funciona cargando un archivo de CSS en el head y luego usando los elementos de HTML con las clases que nos indique en la documentación.
+
+https://fontawesome.com/icons
+
+## MEDIA QUERIES
+
+Se trata de una regla de CSS que nos permite activar un bloque de código de CSS dependiendo de la condición de ancho de píxeles que le digamos.
+
+En el archivo de CSS se encontrará siempre al final de nuestro código.
+
+Cuando definimos el tamaño de píxeles con la propiedad max-width se puede leer como "menor que".
+
+Podemos definir los intervalo de tamaño en píxeles con la sintxis antigua o con la nueva:
+
+max-width: 490px width <= 490px
+
+## MEDIDAS DE CSS
+
+Píxeles (px) -> Medida absoluta
+
+Porcentajes (%) -> Medida relativa (al tamaño del contenedor)
+
+Medidias relativas al viewport -> funcionan como porcentajes pero directamente relativos al tamaño de la pantalla.
+
+- -> viewport width
+- -> viewport height
+
 ## POSICIONAMIENTO ABSOLUTO Y FIJO
 
 Con la propiedad position podemos cambiar el comportamiento de como se posiciona un elemento. Por defecto esta propiedad tiene el valor static pero puede tomar otros valores.
@@ -81,4 +110,16 @@ Cuando un elemento tiene la propiedad con position absolute no respeta la estruc
 - Crear una página nueva de HTML que se llame gallery.html y crear la estructura básica
 
 - Enlazar el index.html y el gallery.html entre ellos (dende el menú de navegación)
+
+## ANIMACIONES
+
+Podemos controlar el tiempo que tarda en cumplirse una animación con la propiedad -> transition
+
+Esta propiedad debe encontrarse en el selector del "estado inicial"
+
+## EJERCICIO 27/03
+
+Arreglar el menú para que no cause desbordamiento en la version tablet y mobile.
+
+Se puede arreglar usando flexbox en los media queries.
 

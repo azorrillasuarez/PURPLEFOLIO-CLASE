@@ -29,7 +29,13 @@ h1 {
     font-weight: bold;
 }
 
-h2,
+h2 {
+    font-weight: normal;
+}
+
+h2.subtitle {
+    margin-bottom: -28px;
+}
 
 
 h3 {
@@ -46,6 +52,14 @@ p {
     font-weight: 400;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    /* background-color: aqua; */
+}
+
+/* BOTON POSICION ABSOLUTA */
 .fixed-btn {
     width: 50px;
     height: 50px;
@@ -67,13 +81,6 @@ p {
 
 .fixed-btn > a {
     color: aliceblue;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    /* background-color: aqua; */
 }
 
 nav {
@@ -98,6 +105,7 @@ nav > ul > li > a:hover {
     color: #6e06f2;
 }
 
+
 header {
     padding: 80px 0;
     display: flex;
@@ -110,6 +118,7 @@ header > div:first-child {
     gap: 28px;
 }
 
+/* SELECTORES PARA LA IMAGEN */
 header > div:last-child {
     min-width: 380px;
     max-width: 624px;
@@ -355,6 +364,77 @@ footer > .f-row > .copyright {
     text-align: right;
 }
 
+/* GALLERY.HTML */
+/* #hGallery {
+    background-color: aqua;
+    height: 100vh;
+} */
+
+
+#gallery {
+    padding: 20px 0 80px 0;
+}
+
+#gallery > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#gallery > ul > li {
+    /* width: 33.333%; */
+    flex: 30%;
+}
+
+
+#masonry {
+    padding: 20px 0 80px 0;
+}
+
+#masonry > h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#masonry > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#masonry > ul > li {
+    height: 25vh;
+    flex-grow: 1;
+}
+
+#masonry > ul > li > img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+
+/* Contact section*/
+#contact {
+    padding: 80px 0;
+    display: flex;
+    gap: 40px;
+    height: 50vh;
+}
+
+#contact > div {
+    flex: 1;
+    width: 50%;
+}
+
+#contact > div > iframe {
+    width: 100%;
+    height: 100%;
+}
+
 
 /*MEDIA QUERIES investigar*/
 
@@ -365,14 +445,14 @@ footer > .f-row > .copyright {
         padding: 0 20px;
     }
 
-    h1 {
-        font-size: 48px;
-    }
-
     header {
         flex-wrap: wrap;
         gap: 28px;
         justify-content: center;
+    }
+
+    h1 {
+        font-size: 48px;
     }
 
     #projects > .p-row {
@@ -397,6 +477,10 @@ footer > .f-row > .copyright {
         text-align: center;
     }
 
+    #gallery > ul > li {
+        flex: 45%;
+    }
+
 }
 
 /*MOBILE*/
@@ -414,6 +498,18 @@ header > div:last-child {
 display: none;
 /*con esto desaparece la imagen cuando pasamos de escritorio y móvil*/
 }
+
+#gallery > ul > li {
+        flex: 100%;
+    }
+
+#contact {
+        flex-direction: column-reverse;
+    }
+
+#contact > div {
+        width: 100%;
+    }
 
 }
 
